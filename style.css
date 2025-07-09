@@ -6,14 +6,16 @@ body {
 }
 
 header {
-  background-image: url('images/banner.jpg'); /* remplace par le chemin réel */
+  background-color: var(--header-color);
+  background-image: url("images/banner.jpg"); /* remplace par ton chemin */
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   color: white;
   text-align: center;
-  padding: 80px 20px 40px; /* haut droite-gauche bas */
-  position: relative;
+  padding: 40px 20px;
 }
+
 
 nav a {
   color: white;
@@ -360,6 +362,10 @@ body.dark {
 @media (max-width: 768px) {
   .burger {
     display: block;
+  }
+  header {
+    background-size: contain;
+    padding: 20px 10px;
   }
 
   #nav-menu {
