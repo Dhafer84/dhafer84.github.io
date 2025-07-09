@@ -13,14 +13,17 @@
   <img src="images/profil.jpg" alt="Photo de Dhafer Bouthelja" class="profil-img">
   <h1>Dhafer Bouthelja</h1>
   <p>Ingénieur Qualité & Étudiant Cloud/DevOps</p>
+  <button class="burger" id="burger">&#9776;</button> <!-- ☰ -->
+
+  <div id="nav-menu">
   <nav>
-    <button id="toggle-theme">🌙 Mode sombre</button>
     <a href="#about">À propos</a>
     <a href="#skills">Compétences</a>
     <a href="#certifications">Certifications</a>
     <a href="#projects">Projets</a>
     <a href="#contact">Contact</a>
   </nav>
+</div>
 </header>
 
  <section id="about">
@@ -117,6 +120,14 @@
     } else {
       toggleBtn.textContent = "🌙 Mode sombre";
     }
+  });
+</script>
+<script>
+  const burger = document.getElementById("burger");
+  const navMenu = document.getElementById("nav-menu");
+
+  burger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
   });
 </script>
 
