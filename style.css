@@ -6,10 +6,13 @@ body {
 }
 
 header {
-  background-color: #004080;
+  background-image: url('images/banner.jpg'); /* remplace par le chemin réel */
+  background-size: cover;
+  background-position: center;
   color: white;
   text-align: center;
-  padding: 40px 20px;
+  padding: 80px 20px 40px; /* haut droite-gauche bas */
+  position: relative;
 }
 
 nav a {
