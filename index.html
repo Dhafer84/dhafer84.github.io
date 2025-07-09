@@ -9,26 +9,28 @@
 </head>
 <body>
   <div id="scroll-progress"></div>
-<div class="floating-socials">
-  <a href="https://www.linkedin.com/in/bouthelja-dhafer-116681a0/" target="_blank" title="LinkedIn">
-    <i class="fab fa-linkedin"></i>
-  </a>
-  <a href="mailto:boutheljad84@gmail.com" title="Gmail">
-    <i class="fas fa-envelope"></i>
-  </a>
-</div>
 
- <!-- bannière uniquement l'image -->
-<header class="banner">
-  <img src="images/banner.jpg" alt="Bannière">
-  <div class="header-content">
-    <h1>Dhafer Bouthelja</h1>
-    <p class="quote">🚀 DevOps | Cloud | Automatisation | Qualité Logicielle</p>
+  <!-- Icônes sociales flottantes -->
+  <div class="floating-socials">
+    <a href="https://www.linkedin.com/in/bouthelja-dhafer-116681a0/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:boutheljad84@gmail.com" title="Gmail"><i class="fas fa-envelope"></i></a>
+  </div>
 
-    <button class="burger" id="burger">&#9776;</button>
+  <!-- Bouton CV flottant -->
+  <a href="docs/cv_dhafer_bouthelja.pdf" class="floating-cv" download target="_blank">📄 Mon CV</a>
 
-    <div id="nav-menu">
-      <nav>
+  <!-- Bannière -->
+  <header class="banner">
+    <img src="images/banner.jpg" alt="Bannière">
+    <div class="header-content">
+      <h1>Dhafer Bouthelja</h1>
+      <p class="quote">🚀 DevOps | Cloud | Automatisation | Qualité Logicielle</p>
+
+      <!-- Bouton Burger -->
+      <button class="burger" id="burger">&#9776;</button>
+
+      <!-- Navigation -->
+      <nav id="nav-menu">
         <a href="#about">À propos</a>
         <a href="#skills">Compétences</a>
         <a href="#certifications">Certifications</a>
@@ -36,130 +38,98 @@
         <a href="#contact">Contact</a>
       </nav>
     </div>
-  </div>
-</header>
+  </header>
 
+  <!-- À propos -->
+  <section id="about">
+    <h2>À propos</h2>
+    <p>Je suis ingénieur qualité avec une spécialisation en DevOps et cloud computing...</p>
+  </section>
 
-
-
- <section id="about">
-  <h2>À propos</h2>
-  <p>Je suis ingénieur qualité avec une spécialisation en DevOps et cloud computing...</p>
-</section>
-
-
+  <!-- Compétences -->
   <section id="skills">
-  <h2>Compétences</h2>
-  <ul class="skills-list">
-    <li>🔧 DevOps : Jenkins, Docker, Kubernetes, GitHub Actions</li>
-    <li>☁️ Cloud : Azure, AWS, Terraform, AKS</li>
-    <li>🧪 Qualité : SonarQube, Coverity, Tests unitaires (JUnit, Mockito)</li>
-    <li>📦 Conteneurisation : Docker, Docker Compose, Portainer</li>
-    <li>📈 Monitoring : Prometheus, Grafana, Alertmanager</li>
-    <li>🖥️ Langages : Bash, Java, JavaScript, HTML/CSS</li>
-  </ul>
-</section>
+    <h2>Compétences</h2>
+    <ul class="skills-list">
+      <li>🔧 DevOps : Jenkins, Docker, Kubernetes, GitHub Actions</li>
+      <li>☁️ Cloud : Azure, AWS, Terraform, AKS</li>
+      <li>🧪 Qualité : SonarQube, Coverity, Tests unitaires (JUnit, Mockito)</li>
+      <li>📦 Conteneurisation : Docker, Docker Compose, Portainer</li>
+      <li>📈 Monitoring : Prometheus, Grafana, Alertmanager</li>
+      <li>🖥️ Langages : Bash, Java, JavaScript, HTML/CSS</li>
+    </ul>
+  </section>
 
-<section id="certifications">
-  <h2>🎓 Certifications</h2>
-  <div class="badges">
-    <a href="https://www.credly.com/badges/f6ebd145-795d-4a35-a979-27ba0f74dc2f/public_url" target="_blank">
-      <img src="images/aws_builder.png" alt="AWS Cloud Security Builder" class="badge-img">
-    </a>
-    <a href="https://www.credly.com/badges/512a646b-58bc-4681-9e2e-0772a70a2abf/public_url" target="_blank">
-      <img src="images/aws_foundations.png" alt="AWS Cloud Security Foundations" class="badge-img">
-    </a>
-  </div>
-  <div class="badge-block">
-  <a href="https://learn.nvidia.com/certificates?id=2fdjxvHSS_2g_UGbP1OeIw" target="_blank">
-    <img src="images/nvidia_certificat.jpg" alt="NVIDIA Certificate - AI for Anomaly Detection" class="badge-img">
-  </a>
-</div>
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>🎓 Certifications</h2>
+    <div class="badges">
+      <a href="https://www.credly.com/badges/f6ebd145-795d-4a35-a979-27ba0f74dc2f/public_url" target="_blank">
+        <img src="images/aws_builder.png" alt="AWS Cloud Security Builder" class="badge-img">
+      </a>
+      <a href="https://www.credly.com/badges/512a646b-58bc-4681-9e2e-0772a70a2abf/public_url" target="_blank">
+        <img src="images/aws_foundations.png" alt="AWS Cloud Security Foundations" class="badge-img">
+      </a>
+      <a href="https://learn.nvidia.com/certificates?id=2fdjxvHSS_2g_UGbP1OeIw" target="_blank">
+        <img src="images/nvidia_certificat.jpg" alt="NVIDIA Certificate" class="badge-img">
+      </a>
+    </div>
+  </section>
 
-</section>
+  <!-- Projets -->
+  <section id="projects">
+    <h2>Projets</h2>
+    <div class="project-cards">
+      <div class="card">💻 DevOps Azure avec AKS & Terraform</div>
+      <div class="card">🔁 Pipeline Jenkins + Docker</div>
+      <div class="card">📊 Monitoring avec Prometheus & Grafana</div>
+    </div>
+  </section>
 
-
- <section id="projects">
-  <h2>Projets</h2>
-  <div class="project-cards">
-    <div class="card">💻 DevOps Azure avec AKS & Terraform</div>
-    <div class="card">🔁 Pipeline Jenkins + Docker</div>
-    <div class="card">📊 Monitoring avec Prometheus & Grafana</div>
-  </div>
-</section>
-
-
+  <!-- Contact -->
   <section id="contact">
-  <h2>Contact</h2>
-  <p>
-    <i class="fas fa-envelope"></i>
-    <a href="mailto:boutheljad84@gmail.com">boutheljad84@gmail.com</a>
-  </p>
-  <p>
-    <i class="fab fa-linkedin"></i>
-    <a href="https://www.linkedin.com/in/bouthelja-dhafer-116681a0/" target="_blank">Voir mon profil LinkedIn</a>
-  </p>
-</section>
+    <h2>Contact</h2>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:boutheljad84@gmail.com">boutheljad84@gmail.com</a></p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/bouthelja-dhafer-116681a0/" target="_blank">Voir mon profil LinkedIn</a></p>
+  </section>
 
-
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Dhafer Bouthelja</p>
   </footer>
+
+  <!-- Scripts -->
   <script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      }
+    const burger = document.getElementById("burger");
+    const navMenu = document.getElementById("nav-menu");
+    burger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
     });
-  });
-
-  document.querySelectorAll('section').forEach(section => {
-    section.classList.add('hidden');
-    observer.observe(section);
-  });
-</script>
-<script>
-  window.addEventListener("scroll", () => {
-    const scrollTop = window.scrollY;
-    const docHeight = document.body.scrollHeight - window.innerHeight;
-    const progress = (scrollTop / docHeight) * 100;
-    document.getElementById("scroll-progress").style.width = progress + "%";
-  });
-</script>
-<script>
-  const toggleBtn = document.getElementById("toggle-theme");
-
-  toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-
-    // Met à jour le texte du bouton
-    if (document.body.classList.contains("dark")) {
-      toggleBtn.textContent = "☀️ Mode clair";
-    } else {
-      toggleBtn.textContent = "🌙 Mode sombre";
-    }
-  });
-</script>
-<script>
-  const burger = document.getElementById("burger");
-  const navMenu = document.getElementById("nav-menu");
-
-  burger.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-  });
-
-  // Fermer le menu après avoir cliqué sur un lien
-  document.querySelectorAll("#nav-menu a").forEach(link => {
-    link.addEventListener("click", () => {
-      navMenu.classList.remove("active");
+    document.querySelectorAll("#nav-menu a").forEach(link => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+      });
     });
-  });
-</script>
+  </script>
 
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      });
+    });
+    document.querySelectorAll('section').forEach(section => {
+      section.classList.add('hidden');
+      observer.observe(section);
+    });
+  </script>
 
-
-
-
+  <script>
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      const progress = (scrollTop / docHeight) * 100;
+      document.getElementById("scroll-progress").style.width = progress + "%";
+    });
+  </script>
 </body>
 </html>
