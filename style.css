@@ -1,18 +1,17 @@
 /* === BANNIÈRE === */
 header.banner {
   width: 100%;
+  max-width: 100%;
   overflow: hidden;
-  margin: 0;
-  padding: 0;
 }
 
 header.banner img {
-  width: 100%;
+  width: 100vw;
   height: auto;
   display: block;
-  max-width: 100%;
   object-fit: cover;
 }
+
 
 /* === MENU DE NAVIGATION === */
 #nav-menu {
