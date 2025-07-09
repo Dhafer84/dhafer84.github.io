@@ -36,7 +36,7 @@ header.banner img {
 }
 
 nav a {
-  color: var(--nav-link);
+  color: white !important;
   text-decoration: none;
   font-weight: bold;
   position: relative;
@@ -79,30 +79,19 @@ nav a:hover::after {
     display: block;
   }
 
-  #nav-menu {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
-  }
-
   #nav-menu nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  #nav-menu nav a {
-    padding: 10px;
-    color: var(--nav-link);
-  }
-
-  #nav-menu:not(.active) nav {
     display: none;
+    flex-direction: column;
+    background-color: var(--header-color);
+    width: 100%;
+    text-align: center;
   }
 
   #nav-menu.active nav {
     display: flex;
   }
 }
+
 .floating-socials {
   position: fixed;
   top: 50%;
@@ -155,6 +144,23 @@ nav a:hover::after {
   background-color: #002d59;
   transform: translateY(-50%) scale(1.05);
 }
+.header-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5); /* Fond sombre translucide */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 .header-content .quote {
   margin-top: 10px;
   font-style: italic;
