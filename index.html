@@ -7,11 +7,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="scroll-progress"></div>
+
   <header>
   <img src="images/profil.jpg" alt="Photo de Dhafer Bouthelja" class="profil-img">
   <h1>Dhafer Bouthelja</h1>
   <p>Ingénieur Qualité & Étudiant Cloud/DevOps</p>
   <nav>
+    <button id="toggle-theme">🌙 Mode sombre</button>
     <a href="#about">À propos</a>
     <a href="#skills">Compétences</a>
     <a href="#projects">Projets</a>
@@ -69,5 +72,25 @@
     observer.observe(section);
   });
 </script>
+<script>
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.body.scrollHeight - window.innerHeight;
+    const progress = (scrollTop / docHeight) * 100;
+    document.getElementById("scroll-progress").style.width = progress + "%";
+  });
+</script>
+<script>
+  const toggleBtn = document.getElementById("toggle-theme");
+
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    toggleBtn.textContent = document.body.classList.contains("dark")
+      ? "☀️ Mode clair"
+      : "🌙 Mode sombre";
+  });
+</script>
+
+
 </body>
 </html>
