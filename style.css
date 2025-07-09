@@ -64,4 +64,11 @@ footer {
   border: 4px solid white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.profil-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
