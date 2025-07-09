@@ -336,7 +336,7 @@ body.dark {
   #toggle-theme {
     margin-top: 10px;
   }
-}
+
 .burger {
   display: none;
   font-size: 30px;
@@ -346,6 +346,12 @@ body.dark {
   cursor: pointer;
   padding: 10px;
 }
+#nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .burger {
   display: none; /* Masqué par défaut */
 }
