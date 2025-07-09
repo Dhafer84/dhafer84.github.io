@@ -36,14 +36,15 @@
   </ul>
 </section>
 
-  <section id="projects">
-    <h2>Projets</h2>
-    <ul>
-      <li>💻 DevOps Azure avec AKS & Terraform</li>
-      <li>🔁 Pipeline Jenkins + Docker</li>
-      <li>📊 Monitoring avec Prometheus & Grafana</li>
-    </ul>
-  </section>
+ <section id="projects">
+  <h2>Projets</h2>
+  <div class="project-cards">
+    <div class="card">💻 DevOps Azure avec AKS & Terraform</div>
+    <div class="card">🔁 Pipeline Jenkins + Docker</div>
+    <div class="card">📊 Monitoring avec Prometheus & Grafana</div>
+  </div>
+</section>
+
 
   <section id="contact">
     <h2>Contact</h2>
@@ -54,5 +55,19 @@
   <footer>
     <p>&copy; 2025 Dhafer Bouthelja</p>
   </footer>
+  <script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  });
+
+  document.querySelectorAll('section').forEach(section => {
+    section.classList.add('hidden');
+    observer.observe(section);
+  });
+</script>
 </body>
 </html>
