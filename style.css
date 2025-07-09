@@ -282,3 +282,54 @@ body.dark {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0,0,0,0.3);
 }
+.cert-grid,
+.project-cards,
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.cert-card,
+.card {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  header {
+    padding: 20px 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .profil-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .project-cards,
+  .cert-grid,
+  .badges {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card,
+  .cert-card {
+    width: 90%;
+  }
+
+  #toggle-theme {
+    margin-top: 10px;
+  }
+}
