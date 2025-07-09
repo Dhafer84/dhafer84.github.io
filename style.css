@@ -6,17 +6,17 @@ body {
 }
 
 /* === BANNIÈRE === */
-/* === BANNIÈRE === */
 header.banner {
   padding: 0;
-  margin: 0;
-  border: none;
+  margin: 0 auto;
+  max-width: 800px; /* même largeur que ton contenu */
 }
 
 header.banner img {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 10px; /* optionnel pour un joli arrondi */
 }
 
 
