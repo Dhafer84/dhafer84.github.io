@@ -6,15 +6,15 @@ body {
 }
 
 header {
-  background-color: var(--header-color);
-  background-image: url("images/banner.jpg"); /* remplace par ton chemin */
+  background-image: url('images/banner.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   color: white;
   text-align: center;
-  padding: 40px 20px;
+  padding: 200px 20px 100px; /* ajuste la hauteur si besoin */
+  position: relative;
 }
+
 
 
 nav a {
@@ -85,21 +85,6 @@ footer {
   position: absolute;
   left: 0;
   color: var(--accent-color);
-}
-.profil-img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.profil-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .project-cards {
@@ -363,9 +348,9 @@ body.dark {
   .burger {
     display: block;
   }
-  header {
-    background-size: contain;
-    padding: 20px 10px;
+   header {
+    padding: 100px 10px 60px;
+    background-position: center top;
   }
 
   #nav-menu {
