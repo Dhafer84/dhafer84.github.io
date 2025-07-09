@@ -129,7 +129,15 @@
   burger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
   });
+
+  // Fermer le menu après clic sur un lien
+  document.querySelectorAll("#nav-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("active");
+    });
+  });
 </script>
+
 
 
 
