@@ -33,3 +33,26 @@ footer {
   text-align: center;
   padding: 15px;
 }
+#skills {
+  background-color: #eef6ff;
+  padding: 40px 20px;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+  font-weight: 500;
+  padding-left: 20px;
+  position: relative;
+}
+
+.skills-list li::before {
+  content: "✅";
+  position: absolute;
+  left: 0;
+  color: #004080;
+}
