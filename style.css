@@ -57,8 +57,9 @@ footer {
   padding: 15px;
 }
 #skills {
-  background-color: #eef6ff;
+  background-color: var(--skills-bg);
   padding: 40px 20px;
+  transition: background-color 0.3s ease;
 }
 
 .skills-list {
@@ -71,6 +72,7 @@ footer {
   font-weight: 500;
   padding-left: 20px;
   position: relative;
+  color: var(--text-color);
 }
 
 .skills-list li::before {
@@ -139,6 +141,7 @@ footer {
   --card-bg: #ffffff;
   --nav-link: white;
   --nav-hover: #ffd700;
+  --skills-bg: #eef6ff;
 }
 
 body {
@@ -199,6 +202,7 @@ body.dark {
   --card-bg: #2a2a2a;
   --nav-link: #eeeeee;
   --nav-hover: #ffd700;
+  --skills-bg: #1e1e1e;
 }
 
 #toggle-theme {
