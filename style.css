@@ -18,10 +18,9 @@
   z-index: 1000;
 }
 
-/* === BANNIÈRE === */
+/* === BANNIÈRE IMAGE SEULE === */
 header.banner {
   width: 100%;
-  position: relative;
   overflow: hidden;
 }
 
@@ -30,34 +29,16 @@ header.banner img {
   height: auto;
   display: block;
   object-fit: cover;
+  max-height: 500px;
 }
 
-.header-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+/* === CITATION SOUS LA BANNIÈRE === */
+.quote {
   text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.header-content h1 {
-  font-size: 2.5rem;
-  margin: 0;
-}
-
-.header-content .quote {
   font-style: italic;
   font-size: 1.2rem;
-  margin-top: 10px;
+  margin: 15px auto;
+  color: #333;
 }
 
 /* === NAVIGATION === */
@@ -66,7 +47,18 @@ header.banner img {
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 15px;
+  background-color: var(--header-color);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+#nav-menu nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #nav-menu a {
@@ -217,21 +209,21 @@ footer {
     display: block;
   }
 
-  #nav-menu {
-    flex-direction: column;
+  #nav-menu nav {
     display: none;
-    margin-top: 15px;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--header-color);
+    text-align: center;
+    gap: 10px;
+    padding: 10px 0;
   }
 
-  #nav-menu.active {
+  #nav-menu.active nav {
     display: flex;
   }
 
-  .header-content h1 {
-    font-size: 1.8rem;
-  }
-
-  .header-content .quote {
+  .quote {
     font-size: 1rem;
     padding: 0 10px;
   }
